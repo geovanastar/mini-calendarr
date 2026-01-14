@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  -webkit-app-region: drag;
+  border-radius: 20px;
+  margin: 0;
+  background: transparent;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  width: 13.475rem;
+  height: 13.245rem;
+  padding: 1rem 1.0645rem;
+
+  background-image: url("imagens/fundo_app.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1.2;
+}
+
+button,
+input,
+select,
+textarea {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+.titulo {
+  display: flex;
+  width: 157px;
+  aspect-ratio: 157/27;
+  padding: 0.25rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6.25rem;
+  border: 1px solid #290101;
+  background: rgba(216, 134, 134, 0.895);
+
+  color: var(--white, #fff);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#calendario {
+  display: flex;
+  width: 11.1rem;
+  height: 10.055rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-image: url("imagens/relogio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dia {
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke-width: 1.9px;
+  -webkit-text-stroke-color: var(--mid-purple, #860f0f);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.45rem;
+
+  display: flex;
+  width: 11.25rem;
+  height: 4.4375rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mes {
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke-width: 1.6px;
+  -webkit-text-stroke-color: #993104;
+  font-family: Pixeboy;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0.3rem;
+
+  width: 8.125rem;
+}
